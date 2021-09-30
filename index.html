@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jennifer's AFrame</title>
+    <meta name="description" content="my test">
+    <script src = "https://aframe.io/releases/1.0.2/aframe.min.js">
+    </script>
+</head>
+<body>
+    <a-scene background = "color:black">
+        <a-box position ="-1 0.5 -3" rotation ="0 45 0" color ="#EF2D5E"
+        shadow></a-box>
+        <a-sphere position ="0 1.25 -5" radius ="1.25" color ="#4CC3D9"
+        shadow></a-sphere>
+        <a-assets>
+            <img id = "test" src= "bee.png">
+        </a-assets>
+        <a-plane name = floor;
+                src= "#test"
+                position = "0 0 -10"
+                rotation = "-90 0 0"
+                width = "20"
+                height = "20"
+                side = double>
+            </a-plane>
+        <a-plane name = top;
+                src= "#test"
+                color = "#FFFFFF"
+                position = "0 8 -10"
+                rotation = "-90 0 0"
+                width = "20"
+                height = "20"
+                side = "double"
+                animation = "property: color; to #000000; dur= 10000; loop: true; dir= alternate"
+                shadow>
+            </a-plane>
+        <a-plane name = side;
+                src= "#test"
+                 color = "#FFFFFF"
+                 position = "10 4 -10"
+                 rotation = "0 90 0"
+                 width = "20"
+                 height = "8"
+                 side = "double"
+                 animation = "property: color; to: #000000; dur: 10000; loop: true; dir = alternate"
+                 shadow>
+            </a-plane>
+        <a-plane name = side;
+                src= "#test"
+                color = "#FFFFFF"
+                position = "-10 4 -10"
+                rotation = "0 90 0"
+                width = "20"
+                height = "8"
+                side = "double"
+                animation = "property: color; to: #000000; dur: 10000; loop: true; dir = alternate"
+                shadow>
+            </a-plane>
+
+
+    </a-scene>
+    
+</body>
+
+
+
+
+
+</html>
